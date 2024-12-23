@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f5;
+            color: #333;
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            margin: 20px;
+
+        }
+
+        h1,
+        h4 {
+            color: #444;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        form h4 {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input[type="text"]:focus {
+            border-color: #6900aa;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #8B03EB;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .genero {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .checkboxes {
+            margin-top: 10px;
+        }
+
+        .checkboxes label {
+            margin-left: 5px;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .checkbox1 {
+            display: flex;
+        }
+
+        .checkbox2 {
+            display: flex;
+            margin-top: 5px;
+        }
+
+        .checkbox3 {
+            display: flex;
+            margin-top: 5px;
+        }
+
+        .enviar {
+            margin-top: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Formulário de Login</h1>
+
+    </header>
+
+    <main>
+
+        <form autocomplete="off">
+            <h4>Informe o seu nome e sobrenome</h4>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" placeholder="Digite seu nome">
+
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome" placeholder="Digite seu sobrenome">
+
+            <h4>Informe seu gênero:</h4>
+            <div class="genero">
+                <input type="radio" id="imasculino" name="genero" value="Masculino">
+                <label for="imasculino">Masculino</label>
+
+                <input type="radio" id="ifeminino" name="genero" value="Feminino">
+                <label for="ifeminino">Feminino</label>
+
+                <input type="radio" id="inaoinformar" name="genero" value="Não Informar">
+                <label for="inaoinformar">Não informar</label>
+            </div>
+
+            <h4>Selecione as suas habilidades:</h4>
+            <div class="checkboxes">
+                <div class=checkbox1>
+                    <input type="checkbox" id="html" name="html" value="HTML">
+                    <label for="html">HTML</label>
+                </div>
+                <hr>
+
+                <div class="checkbox2">
+                    <input type="checkbox" id="css" name="css" value="CSS">
+                    <label for="css">CSS</label>
+                </div>
+                <hr>
+
+                <div class="checkbox3">
+                    <input type="checkbox" id="python" name="python" value="Python">
+                    <label for="python">Python</label>
+                </div>
+            </div>
+
+            <div class="enviar"><input type="submit" value="Enviar"></div>
+
+        </form>
+
+    </main>
+
+    <footer>
+
+        <a href="sobre.html">Sobre</a>
+        <p>&copy; Todos os direitos reservados <a href="https://www.instagram.com/arthurdoxadrez">@Arthur</a></p>
+
+    </footer>
+
+</body>
+
+</html> 
